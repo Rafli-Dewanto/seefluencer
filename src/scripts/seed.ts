@@ -37,7 +37,7 @@ async function seed() {
       id: yearlyPlanId,
       name: 'Yearly',
       description: 'Access to all premium influencer courses for one year',
-      price: 2999000,
+      price: 699900,
       duration: 365,
       features: JSON.stringify([
         'Full access to all courses',

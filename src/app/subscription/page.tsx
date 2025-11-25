@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import toast from 'react-hot-toast';
+import { formatRupiah } from '@/utils/currency';
 
 declare global {
   interface Window {
@@ -135,7 +136,7 @@ export default function SubscriptionPage() {
                 <CardTitle className="text-2xl">{plan.name}</CardTitle>
                 <CardDescription>{plan.description}</CardDescription>
                 <div className="text-3xl font-bold">
-                  Rp {(plan.price / 100).toLocaleString('id-ID')}
+                  {formatRupiah(plan.price)}
                   <span className="text-sm font-normal text-gray-600">
                     /{plan.duration} days
                   </span>
